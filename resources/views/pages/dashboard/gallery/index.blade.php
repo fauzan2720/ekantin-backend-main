@@ -12,10 +12,19 @@
                 ajax: {
                     url: '{!! url()->current() !!}',
                 },
-                columns: [
-                    { data: 'id', name: 'id', width: '5%'},
-                    { data: 'url', name: 'url' },
-                    { data: 'is_featured', name: 'is_featured' },
+                columns: [{
+                        data: 'id',
+                        name: 'id',
+                        width: '5%'
+                    },
+                    {
+                        data: 'url',
+                        name: 'url'
+                    },
+                    {
+                        data: 'is_featured',
+                        name: 'is_featured'
+                    },
                     {
                         data: 'action',
                         name: 'action',
@@ -39,12 +48,12 @@
                 <div class="px-4 py-5 bg-white sm:p-6">
                     <table id="crudTable">
                         <thead>
-                        <tr>
-                            <th class="px-2 py-4">ID</th>
-                            <th class="px-6 py-4">Photo</th>
-                            <th class="px-6 py-4">Featured</th>
-                            <th class="px-6 py-4">Action</th>
-                        </tr>
+                            <tr>
+                                <th class="px-2 py-4">ID</th>
+                                <th class="px-6 py-4">Photo</th>
+                                <th class="px-6 py-4">Featured</th>
+                                <th class="px-6 py-4">Action</th>
+                            </tr>
                         </thead>
                         <tbody></tbody>
                     </table>

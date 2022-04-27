@@ -12,11 +12,28 @@
                 ajax: {
                     url: '{!! url()->current() !!}',
                 },
-                columns: [
-                    { data: 'id', name: 'id', width: '5%'},
-                    { data: 'user.name', name: 'user.name' },
-                    { data: 'total_price', name: 'total_price' },
-                    { data: 'status', name: 'status' },
+                columns: [{
+                        data: 'id',
+                        name: 'id',
+                        width: '5%'
+                    },
+                    {
+                        data: 'user.name',
+                        name: 'user.name'
+                    },
+                    {
+                        data: 'total_price',
+                        name: 'total_price'
+                    },
+                    {
+                        data: 'status',
+                        name: 'status'
+                    },
+                    {
+                        data: 'created_at',
+                        name: 'created_at',
+                        width: '22%'
+                    },
                     {
                         data: 'action',
                         name: 'action',
@@ -35,13 +52,14 @@
                 <div class="px-4 py-5 bg-white sm:p-6">
                     <table id="crudTable">
                         <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nama</th>
-                            <th>Total Harga</th>
-                            <th>Status</th>
-                            <th>Aksi</th>
-                        </tr>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nama</th>
+                                <th>Total Harga</th>
+                                <th>Status</th>
+                                <th>Tanggal Transaksi</th>
+                                <th>Aksi</th>
+                            </tr>
                         </thead>
                         <tbody></tbody>
                     </table>
